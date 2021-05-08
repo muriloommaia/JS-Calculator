@@ -1,0 +1,85 @@
+
+* {
+    margin: 0;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://cdn.dicionariopopular.com/imagens/nazareconfusamatematica.gif);
+    background-color: black;
+    margin: 0;
+    height: 100vh;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+    "dis    dis    dis   dis"
+    "AC     C      div   times"
+    "seven  eigth  nine  minus"
+    "four   five   six   plus"
+    "one    two    three equal"
+    "zero   zero   dot   equal";
+    border: 3px solid black;
+}
+
+.padButton {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 25px;
+    background-color: grey;
+    color: white;
+    border: 1px solid black;
+    border-radius: 2%;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.padButton:hover {
+    border: 1px solid white;
+    border-radius: 2%;;
+    color: black;
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.dis {
+    grid-area: dis;
+    background-color: black;
+    color: white;
+    text-align: right;
+    font-size: 25px;
+}
+
+.equal {
+    grid-area: equal;
+}
+.dark-gray {
+    background-color: #4d4d4d;
+}
+
+.red {
+    background-color: rgb(172, 57, 57);
+}
+
+.blue {
+    background-color: rgb(86, 38, 218);
+}
+.dis input {
+    background-color: black;
+    color: white;
+    text-align: right;
+    font-size: 20px;
+    border:0px;
+}
+
+.total {
+    color: yellow;
+    font-size: 25px;
+}
