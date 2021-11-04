@@ -1,4 +1,3 @@
-
 function App () {
     // O useState simplifica a criação de uma class. Usa o bind em setExpression e atribuiu o valor do state
     // expression para "" no inicio da operação
